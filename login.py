@@ -1,6 +1,6 @@
 from sys import argv
 
-def login(browser, callback) -> None:
+def login(browser, callback = lambda browser : None) -> None:
 
     url_login_aluno = "https://qacademico.ifce.edu.br/qacademico/index.asp?t=1001"
     browser.get(url_login_aluno)
